@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Classes e gerais*/
+
+
+* {             /*Remove os espaçamentos nativos*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.divs {
+    min-height: 100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+.botao1 {
+    background-color: #f5f5f5;
+    border: 2px solid #439BD0;
+    color: black;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.botao1:hover {
+    background-color: #439BD0;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.botao2 {
+    background-color: #f5f5f5;
+    border: 2px solid #ca4444;
+    color: black;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.botao2:hover {
+    background-color: #ca4444;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+body {
+    background: #fff;
+    color: #f5f5f5;
+	font-size: 13pt;
+	font-weight: 400;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #439BD0;  
+}
+
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    margin-top: 20px;
+}
+
+#logo p {
+    text-align: center;
+}
+
+/*Menu*/
+#menu {
+    float: right;
+    margin-top: 20px;
+}
+
+#menu ul {
+    text-transform: uppercase;
+}
+
+#menu li {
+    display: inline-flex;
+    padding: 10px;
+    margin: 3px 
+}
+
+#menu a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+#menu a:hover {
+    color: #666;
+    transition: 1s;
+}
+
+/*Parte central*/
+div#principal {
+    clear: both;
+    background-image: url('imagens/servicos2.jpg');
+    background-size: 100%;
+    min-height: 600px;
+    padding-top: 80px;
+}
+
+ article#principal {
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+/*Formatação dos serviços*/
+div#servicos ul {
+    min-height: 300px;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+    list-style: none;
+}
+
+div#servicos li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.serv {
+    text-align: center;
+    font-size: 14pt;
+    padding: 2px;
+}
+
+/*Fotos dos  fotos*/
+div#galeria p {
+    background-color: #439BD0;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: larger;
+}
+
+ul#fotos {
+    width: 900px;
+    min-height: 300px;
+    margin: 50px auto 50px auto;
+    padding: 60px 50px 50px 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#fotos li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border: 3px solid #666;
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+    transition: all .5s ease-in;
+}
+
+ul#fotos li span {
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 450px;
+    padding: 5px;
+}
+
+ul#fotos li:hover {
+    transform: scale(1.5);
+}
+
+ul#fotos li:hover span {
+    opacity: 1;
+}
+
+ul#fotos li#foto1 {
+    background: url('imagens/p3.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#fotos li#foto1:hover {
+    background-position: 0px 0px;
+    background-size: 250px 250px;
+}
+
+ul#fotos li#foto2 {
+    background: url('imagens/jardim.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#fotos li#foto2:hover {
+    background-position: 0px 0px;
+    background-size: 250px 250px;
+}
+
+ul#fotos li#foto3 {
+    background: url('imagens/sauna.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;
+}
+
+ul#fotos li#foto3:hover {
+    background-position: 0px 0px;
+    background-size: 250px 250px;
+}
+
+/*Formulario*/
+div#contato {
+    background-image: url('imagens/p2.jpg');
+    background-size: 100%;
+    min-height: 600px;
+    padding-bottom: 50px;
+    
+
+}
+
+div#contato h3 {
+    background-color: #439BD0;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 50px auto  auto auto;
+    padding-bottom: 30px;
+    min-height: 300px;  
+}
+
+form p {
+    padding: 10px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+input, textarea {
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: #f5f5f5
+    font-weight: bolder;
+    font-size: 15pt;
+}
+
+fieldset {
+    border-color: #cceecc;
+    border-radius: 20px;
+    margin: 20px; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/*rodapé*/
+#rodape {
+    clear: both;
+    min-height: 60px;
+    background-color: #439BD0;
+    padding: 20px;
+    font-size: 10pt;
+    color: black;
+    text-align: center;
+}

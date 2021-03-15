@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="testeCSS.css">
+    <title>Clarear Serviços</title>
+</head>
+
+<body>
+    
+    <header id="cabecalho" class="divs">
+
+        <div class="container">
+        
+            <div id="logo">
+               <a href="index.html"> <h1><b>CLAREAR</b></h1> <p>SERVIÇOS</p> </a>
+                
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    
+        <div id="principal" class="container">
+
+           <article id="principal" style="background-color: rgba(0, 0, 0, 0.7);"> 
+                <h2>Clarear Serviços</h2>
+                <h3>Limpeza de piscinas e serviços de jardinagem em geral</h3>
+
+                <div id="servicos" class="container">
+                    <ul>
+                        <li class="serv"><span><b>Serviço1</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore commodi nisi, nobis eos deleniti tenetur, optio porro architecto accusamus repellendus voluptatum asperiores iure. Qui tempora cum tenetur sequi molestias. </span></li>
+                        <li class="serv"><span><b>Serviço2</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore commodi nisi, nobis eos deleniti tenetur, optio porro architecto accusamus repellendus voluptatum asperiores iure. Qui tempora cum tenetur sequi molestias. </span></li>
+                        <li class="serv"><span><b>Serviço3</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore commodi nisi, nobis eos deleniti tenetur, optio porro architecto accusamus repellendus voluptatum asperiores iure. Qui tempora cum tenetur sequi molestias. </span></li>
+                    </ul>
+                </div>
+
+           </article> 
+            
+        </div>
+
+        <div id="galeria">
+
+            <p>Veja alguns de nossos serviços</p>
+
+            <ul id="fotos" class="divs">
+                <li id="foto1"><span>Manutenção e limpeza de piscinas</span></li>
+                <li id="foto2"><span>restauração e design de jardins</span></li>
+                <li id="foto3"><span>Manutenção e limpeza de saunas</span></li>
+            </ul>
+        </div>
+
+        <div id="contato">
+            <h3>Formulário para contato</h3>
+
+            <div style="background-color: rgba(0, 0, 0, 0.6);">
+                <form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
+
+                    <input type="hidden" name="recipient" value="viniciusgoes021@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+        <input type="hidden" name="redirect" value="formulario.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+        <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+        <input type="hidden" name="email" value="viniciusgoes021@gmail.com">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+                    <fieldset id="informacao">
+                        <legend>Informações</legend>
+                        <p>Nome: <br> <input type="text" name="nome" size="30" maxlength="30" placeholder="Nome Completo"> </p>
+                        <p>E-mail: <br> <input type="email" name="replyto" size="50" maxlength="50" placeholder="Digite seu email"></p>
+                        <p>Telefone: <br> <input type="number" name="phone" size="30" maxlength="15" placeholder="(99)99999-9999"> </p>
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <p>Urgência: <br> 0 <input type="range" name="urgencia" min="0" max="10" step="1"> 10</p>
+                        <p>Mensagem: <br> <textarea name="tMsg" size="50" cols="40" rows="5" placeholder="Escreva aqui seu pedido de orçamento">
+                        </textarea></p>
+                    </fieldset>
+
+                    <p> 
+                        <input class="botao1"  type="submit" name="BTEnvia" value="Enviar"> 
+                        <input class="botao2" type="reset" name="BTApaga" value="Apagar"> 
+                    </p> 
+
+                </form>
+            </div>
+        </div>
+
+    <footer id="rodape">
+        <p>Desemvolvido by Vinicius Góes | Março 2021 <br> Copyright Todos os Direito Reservados</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"
+    target="_blank"
+    style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
+
+</body>
+
+</html>
